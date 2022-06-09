@@ -88,3 +88,8 @@ let gpxTrack = new L.GPX("../data/gps-daten-btt-etappe-09-kaiserhaus-kufstein.gp
         dashArray: [2,5],
     }
 }).addTo(overlays.gpx);
+
+gpxTrack.on("loaded", function(evt) {
+    //console.log("loaded gpx event: ", evt);
+    map.fitBounds(evt.target.getBounds());
+});
