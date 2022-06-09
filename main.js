@@ -74,3 +74,14 @@ L.control.fullscreen().addTo(map);
 overlays.gpx.addTo(map);
 
 // GPX Track Layer implementieren
+let gpxTrack = new L.GPX("../data/gps-daten-btt-etappe-09-kaiserhaus-kufstein.gpx", {
+    async: true,
+    marker_options: {
+        startIconUrl: 'icons/start.png',
+        endIconUrl: 'icons/finish.png',
+        shadowUrl: null, //normalerweise hat Anfang und Ende einen Schatten. Dieser wird hiermit ausgeschalten
+        iconSize: [32,37],
+        iconAnchor: [16,37],
+    },
+
+}).addTo(overlays.gpx);
