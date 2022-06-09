@@ -83,5 +83,8 @@ let gpxTrack = new L.GPX("../data/gps-daten-btt-etappe-09-kaiserhaus-kufstein.gp
         iconSize: [32,37],
         iconAnchor: [16,37],
     },
-
+    polyline_options: {
+        color: "black",
+        dashArray: [2,5],
+    }
 }).addTo(overlays.gpx);
