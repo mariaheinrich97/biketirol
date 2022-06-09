@@ -91,5 +91,17 @@ let gpxTrack = new L.GPX("../data/gps-daten-btt-etappe-09-kaiserhaus-kufstein.gp
 
 gpxTrack.on("loaded", function(evt) {
     //console.log("loaded gpx event: ", evt);
+    let gpxLayer = evt.target;
     map.fitBounds(evt.target.getBounds());
+
+    let popup = `<h3>${gpxLayer.get_name()}</h3>
+    <ul>
+    <li>Streckenlänge: ${((gpxLayer.get_distance())/1000).toFixed()} m</li>
+    <li>höchster Punkt: ${gpxLayer.get_elevation_max()} m</li>
+    <li>niedrigster Punkt: ${gpxLayer.get_elevation_min()} m</li>
+    <li>Höhenmeter bergauf: ${gpxLayer.get_elevation_gain().toFixed()} m</li>
+    <li>Höhenmeter bergab: ${gpxLayer.get_elevation_loss().toFixed()} m</li>;
+    `
+    gpxLayer.bindPopup(popup);
 });
+
