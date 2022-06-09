@@ -11,18 +11,32 @@
     <link rel="shortcut icon" href="icons/mountainbiking.png" type="image/png">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
 
     <!-- Leaflet providers plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js"
+        integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Leaflet fullscreen plugin -->
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
+
+    <!--Leaflet gpx plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"
+        integrity="sha512-BsUtn1Ar2O78Q8YkY1f2pkioHOs8H43KUlP3PHus8lyAMODNq1CmemnU435dFk/SU37OGG+ooxvmEhAcNTEBFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- eigene Stile und Hauptskript -->
     <link rel="stylesheet" href="main.css">
@@ -40,19 +54,40 @@
             </nav>
         </header>
         <article>
-            <h1><a href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kaiserhaus-kufstein">Etappe 09: Kaiserhaus – Kufstein</a></h1>
-            <p>Ihre Tour beginnt beim 500 Jahre alten Kaiserhaus in Aschau an der Brandenberger Ache. Die mittelschwierige Tour gestaltet sich sehr abwechslungsreich und führt neben mehreren Einkehrmöglichkeiten auch am Natur-Highlight Kaiserklamm vorbei – die zu den schönsten Schluchtenlandschaften Österreichs zählt. Nach rund drei Stunden Fahrzeit erreichen Sie Ihr Ziel, Kufstein. Für eine wohlverdiente Stärkung nach der Tour empfiehlt sich die Theaterhütte in Kufstein.</p>
+            <h1><a
+                    href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kaiserhaus-kufstein">Etappe
+                    09: Kaiserhaus – Kufstein</a></h1>
+            <p>Ihre Tour beginnt beim 500 Jahre alten Kaiserhaus in Aschau an der Brandenberger Ache. Die
+                mittelschwierige Tour gestaltet sich sehr abwechslungsreich und führt neben mehreren
+                Einkehrmöglichkeiten auch am Natur-Highlight Kaiserklamm vorbei – die zu den schönsten
+                Schluchtenlandschaften Österreichs zählt. Nach rund drei Stunden Fahrzeit erreichen Sie Ihr Ziel,
+                Kufstein. Für eine wohlverdiente Stärkung nach der Tour empfiehlt sich die Theaterhütte in Kufstein.</p>
 
             <div id="map"></div>
 
             <h3>Streckenbeschreibung</h3>
-            <p>Leicht ansteigend verläuft der Beginn der Etappe (vorbei an der Kaiserklamm) in östlicher Richtung (Radweg Nr.326). Nach ca. 7 Kilometern kommt eine größere Wegkreuzung, bei der man rechts abzweigt. Von nun an hält man sich bis zum Thiersee an die Radwegweiser Nr. 327 (Thierseerunde). Bei Erreichen der Hauptstraße in Thiersee (2,5 Stunden ab Kaiserhaus) zweigt man rechts ab, um nach 400 Metern wiederum links in einen asphaltierten Weg („Lechen“) einzubiegen. Von nun an hält man sich an die Wegweiser Richtung „Wacht“. Nach der Einkehr im Gasthaus Wachtl radelt man den Schotterweg hinunter bis zur Holzbrücke über die Thierseer Ache und am alten Bahnhof vorbei über die Staatsgrenze. Immer auf der Hauptstraße fährt man nun nach Kiefersfelden bis man kurz vor dem Zentrum beim Schild „Zum Schaupenwirt“ rechts abzweigt. Nun geht’s durchs Wohngebiet, beim Sportplatz kurz nach rechts und gleich wieder links in einen schmalen Fahrweg und über die Brücke des Kieferbachs. Nach der Brücke fährt man links weiter, überquert nach ein paar hundert Metern die Hauptstraße, und es geht in gleicher Richtung weiter, bis man zur Autobahnbrücke über den Inn gelangt. Diese wird unterquert und man erreicht sofort das Etappenziel am Innufer.</p>
+            <p>Leicht ansteigend verläuft der Beginn der Etappe (vorbei an der Kaiserklamm) in östlicher Richtung
+                (Radweg Nr.326). Nach ca. 7 Kilometern kommt eine größere Wegkreuzung, bei der man rechts abzweigt. Von
+                nun an hält man sich bis zum Thiersee an die Radwegweiser Nr. 327 (Thierseerunde). Bei Erreichen der
+                Hauptstraße in Thiersee (2,5 Stunden ab Kaiserhaus) zweigt man rechts ab, um nach 400 Metern wiederum
+                links in einen asphaltierten Weg („Lechen“) einzubiegen. Von nun an hält man sich an die Wegweiser
+                Richtung „Wacht“. Nach der Einkehr im Gasthaus Wachtl radelt man den Schotterweg hinunter bis zur
+                Holzbrücke über die Thierseer Ache und am alten Bahnhof vorbei über die Staatsgrenze. Immer auf der
+                Hauptstraße fährt man nun nach Kiefersfelden bis man kurz vor dem Zentrum beim Schild „Zum Schaupenwirt“
+                rechts abzweigt. Nun geht’s durchs Wohngebiet, beim Sportplatz kurz nach rechts und gleich wieder links
+                in einen schmalen Fahrweg und über die Brücke des Kieferbachs. Nach der Brücke fährt man links weiter,
+                überquert nach ein paar hundert Metern die Hauptstraße, und es geht in gleicher Richtung weiter, bis man
+                zur Autobahnbrücke über den Inn gelangt. Diese wird unterquert und man erreicht sofort das Etappenziel
+                am Innufer.</p>
         </article>
         <footer>
             <strong>Datenquellen:</strong>
             <nav>
-                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol | Mountainbike-Rundkurs durch Tirol in Österreich</a> |
-                <a href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kaiserhaus-kufstein">Etappe 09: Kaiserhaus – Kufstein</a>
+                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol |
+                    Mountainbike-Rundkurs durch Tirol in Österreich</a> |
+                <a
+                    href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kaiserhaus-kufstein">Etappe
+                    09: Kaiserhaus – Kufstein</a>
             </nav>
         </footer>
     </main>
